@@ -11,12 +11,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Bootstrap JS con Popper.js -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" defer></script>
-
   </head>
 
 
@@ -31,75 +25,86 @@
       *{
         font-family: 'Roboto',sans-serif;
       }
-  </style>
-  <title>Instagram</title>
+    </style>
+    <title>Instagram</title>
 
-<!--Barra de navegación-->
-<div id="header" class="container-fluid">
-  <nav class="navbar fixed top navbar-expand-lg bg-body-tertiary d-flex justify-content-between">
-    <!-- Contenedor para el logo de Instagram -->
-    <a class="navbar-brand" href="#" style="font-size: 25px;">
-      <i class="fa-brands fa-instagram m-3" style="font-size: 25px;"></i>Instagram
-    </a>
+    <!-- Barra de navegación -->
+    <div id="header" class="container-fluid">
+      <nav class="navbar fixed top navbar-expand-lg bg-body-tertiary d-flex justify-content-between">
+        <!-- Contenedor para el logo de Instagram -->
+        <a class="navbar-brand" href="#" style="font-size: 25px;">
+          <i class="fa-brands fa-instagram m-3" style="font-size: 25px;"></i>Instagram
+        </a>
 
-    <!-- Contenedor para los botones (Create new post y herramientas) -->
-    <div class="d-flex align-items-center">
-      <!-- Botón de creación de nuevo post -->
-      <button type="button" class="btn btn-success mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal" style="white-space: nowrap;">Create new post</button>
+        <!-- Contenedor para los botones (Create new post y herramientas) -->
+        <div class="d-flex align-items-center ms-auto">
+          <!-- Botón de creación de nuevo post -->
+          <button type="button" class="btn btn-success mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal" style="white-space: nowrap;">Create new post</button>
 
-      <!-- Botón de herramientas -->
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <i class="fa-solid fa-gear"></i>
-        </button>
-        <!-- Desplegable herramientas -->
-        <ul class="dropdown-menu dropdown-menu-end">
-          <li><a class="dropdown-item" href="#">Profile</a></li>
-          <li><a class="dropdown-item" href="#">Accesibility</a></li>
-          <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#" style="color: red;">Log out</a></li>
-        </ul>
+          <!-- Pestaña creación de nuevo post -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                  <hr>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Caption:
+                </div>
+                <div class="input-group">
+                  <textarea class="form-control mx-3" aria-label="Add the caption of your post here" placeholder="Add the caption of your post here"></textarea>
+                </div>
+                
+                <div id="modal-icons">
+                  <button type="button" class="btn btn-light m-3"><i class="fa-solid fa-camera"></i></button><button type="button" class="btn btn-light"><i class="fa-solid fa-location-dot"></i></button>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-end m-3">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success ms-2">Publish</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botón de herramientas -->
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-gear"></i>
+            </button>
+            <!-- Desplegable herramientas -->
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accesibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#" style="color: red;">Log out</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Header con los dos cuadraditos -->
+    <nav>
+      <div class="nav nav-tabs d-flex justify-content-center align-items-center" id="nav-tab" role="tablist" id="feed-type">
+        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa-solid fa-table-cells" style="color: black";></i></button>
+        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa-regular fa-square" style="color: black"></i></button>
+      </div>
+    </nav>
+
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+        <!-- Feed de 3x3 -->
+        Contenido cuadrícula
+      </div>
+      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+        <!-- Feed de 1x1 con foto y comentario -->
+        Contenido columna
       </div>
     </div>
-  </nav>
-</div>
-
-
-<!--Header con los dos cuadraditos-->
-<nav>
-  <div class="nav nav-tabs d-flex justify-content-center align-items-center" id="nav-tab" role="tablist" id="feed-type">
-    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa-solid fa-table-cells" style="color: black";></i></button>
-    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa-regular fa-square" style="color: black"></i></button>
-  </div>
-</nav>
-<div class="tab-content" id="nav-tabContent">
-  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-    
-    <!--Feed de 3x3--> 
-
-    Contenido cuadrícula
-
-  </div>
-  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-    
-    <!---Feed de 1x1 con foto y comentario-->
-
-    Contenido columna
-  
-  </div>
-
-</div>
-</div>
-
-
-
-
-
-
-
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
