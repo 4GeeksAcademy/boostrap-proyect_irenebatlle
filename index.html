@@ -2,15 +2,21 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
+    <!-- Bootstrap CSS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
 
 
@@ -74,10 +80,10 @@
             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="fa-solid fa-gear"></i>
             </button>
-            <!-- Desplegable herramientas -->
+            <!-- Dropdown menu -->
             <ul class="dropdown-menu dropdown-menu-end">
               <li><a class="dropdown-item" href="#">Profile</a></li>
-              <li><a class="dropdown-item" href="#">Accesibility</a></li>
+              <li><a class="dropdown-item" href="#">Accessibility</a></li>
               <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#" style="color: red;">Log out</a></li>
@@ -98,16 +104,86 @@
     <div class="tab-content" id="nav-tabContent">
       <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
         <!-- Feed de 3x3 -->
-        Contenido cuadrícula
+        <div class="row">
+          <!---primera fila-->
+          <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://www.mataro.cat/ca/actualitat/noticies/2022/les-santes-2022-tornen-a-omplir-la-ciutat-d2019activitats-per-a-tots-els-publics/@@images/8a5b4f1d-8260-4e1b-b188-8aad930c0a75.jpeg" class="img-fluid w-100" alt=""></div>
+          <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://images.ecestaticos.com/TEtxk2ArInqpFjh0MVsEBgsxqPc=/0x18:1917x1438/1440x1080/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F1c9%2F799%2Fd52%2F1c9799d5249303ca190a774c202b0efa.jpg" class="img-fluid w-100" alt=""></div>
+          <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://geoinnova.org/wp-content/uploads/2021/08/soluciones-basadas-naturaleza-gestion.jpg" class="img-fluid w-100" alt=""></div>
+        </div>
+        <div class="row">
+          <!---segunda fila-->
+          <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://www.epitech-it.es/wp-content/uploads/2022/06/historia-de-la-programacion-1.jpg" class="img-fluid w-100" alt=""></div>
+          <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://images.ecestaticos.com/v-Po9fpUc1zOLidTuVSY9bbdXxk=/0x0:2272x1515/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F7c7%2Faed%2F35a%2F7c7aed35a247391a11c8abba116c1553.jpg" class="img-fluid w-100" alt=""></div>
+          <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://images.ecestaticos.com/zu-18U0cjbo6kbOgbL7dJPzxPRc=/0x0:1000x750/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F7c3%2F983%2Fe18%2F7c3983e18d82e4993b0a9b2a8eaf2c93.jpg" class="img-fluid w-100" alt=""></div>
+        </div>
+        <div class="row">
+          <!---tercera fila-->
+          <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://ecosistemas.win/wp-content/uploads/paisaje-africano-arbol-en-kenia-sabana-al-atardecer-panoramico-paisaje-africano-arbol-en-kenia-sabana-al-atardecer-panoramico-pi.jpg" class="img-fluid w-100" alt=""></div>
+          <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://bioparcvalencia.es/wp-content/uploads/2024/04/hiena-manchada-01.jpg" class="img-fluid w-100" alt=""></div>
+          <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://udare.es/wp-content/uploads/2021/01/Katavi-15-640x480.jpg" class="img-fluid w-100" alt=""></div>
+        </div>
+        
+        
+      
       </div>
       <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
         <!-- Feed de 1x1 con foto y comentario -->
-        Contenido columna
+         <!--primera foto-->
+        <div class="row my-4">
+                    <div class="col-6 mx-auto border rounded p-0">
+                        <div class="d-flex p-2 align-items-center">
+                            <div class="w-100 fs-4">Las fiestas de mi ciudad!</div>
+                            <p class="mb-0 align-middle"style="color: gray;">26/07</p>
+                        </div>
+                        <img style="object-fit: cover;" src="https://www.mataro.cat/ca/actualitat/noticies/2022/les-santes-2022-tornen-a-omplir-la-ciutat-d2019activitats-per-a-tots-els-publics/@@images/8a5b4f1d-8260-4e1b-b188-8aad930c0a75.jpeg" class="img-fluid w-100 col-12"/>
+                        <div class="p-2">
+                            <b>21 Likes</b>
+                            <p>Una foto de una noche de las fiestas de mi ciudad. </p>
+                        </div>
+                    </div>
+                </div>
+                <!--primera foto-->
+        <div class="row my-4">
+          <div class="col-6 mx-auto border rounded p-0">
+            <div class="d-flex p-2 align-items-center">
+                  <div class="w-100 fs-4">Un gatito igual que el mío</div>
+                  <p class="mb-0 align-middle"style="color: gray;">21/05</p>
+              </div>
+              <img style="object-fit: cover;" src="https://images.ecestaticos.com/TEtxk2ArInqpFjh0MVsEBgsxqPc=/0x18:1917x1438/1440x1080/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F1c9%2F799%2Fd52%2F1c9799d5249303ca190a774c202b0efa.jpg" class="img-fluid w-100 col-12"/>
+              <div class="p-2">
+                  <b>354654 Likes</b>
+                  <p>Por internet he encontrado este gatito que se parece mucho al mío, pero no tan guapo. </p>
+              </div>
+          </div>
+      </div>
+      <!--primera foto-->
+      <div class="row my-4">
+        <div class="col-6 mx-auto border rounded p-0">
+          <div class="d-flex p-2 align-items-center">
+                <div class="w-100 fs-4">Un paisaje bonito</div>
+                <p class="mb-0 align-middle" style="color: gray;">15/04</p>
+            </div>
+            <img style="object-fit: cover;" src="https://geoinnova.org/wp-content/uploads/2021/08/soluciones-basadas-naturaleza-gestion.jpg" class="img-fluid w-100 col-12"/>
+            <div class="p-2">
+                <b>6 Likes</b>
+                <p>Me gusta este paisaje.</p>
+            </div>
+        </div>
+    </div>
+      
       </div>
     </div>
 
+    
+    
+    
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--no sé por qué, pero con los dos links me funciona, con uno de los dos solo no-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
   </body>
 </html>
